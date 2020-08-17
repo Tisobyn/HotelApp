@@ -12,16 +12,20 @@
 		3EDF73A924EB0F3100C934BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF73A824EB0F3100C934BB /* ViewController.swift */; };
 		3EDF73AE24EB0F9C00C934BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EDF73AD24EB0F9C00C934BB /* Assets.xcassets */; };
 		3EDF73B124EB0F9D00C934BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDF73AF24EB0F9D00C934BB /* LaunchScreen.storyboard */; };
+		3EDF73BF24EB154500C934BB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF73BE24EB154500C934BB /* TabBarController.swift */; };
+		3EDF73C124EB165E00C934BB /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF73C024EB165E00C934BB /* SavedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EDF73A124EB0F3100C934BB /* HotelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDF73A424EB0F3100C934BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EDF73A624EB0F3100C934BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EDF73A824EB0F3100C934BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EDF73A824EB0F3100C934BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		3EDF73AD24EB0F9C00C934BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EDF73B024EB0F9D00C934BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EDF73B224EB0F9D00C934BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EDF73BE24EB154500C934BB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3EDF73C024EB165E00C934BB /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,62 @@
 			children = (
 				3EDF73A424EB0F3100C934BB /* AppDelegate.swift */,
 				3EDF73A624EB0F3100C934BB /* SceneDelegate.swift */,
-				3EDF73A824EB0F3100C934BB /* ViewController.swift */,
+				3EDF73BA24EB148700C934BB /* ViewModel */,
+				3EDF73B924EB148100C934BB /* Model */,
+				3EDF73B824EB147A00C934BB /* View */,
 				3EDF73AD24EB0F9C00C934BB /* Assets.xcassets */,
 				3EDF73AF24EB0F9D00C934BB /* LaunchScreen.storyboard */,
 				3EDF73B224EB0F9D00C934BB /* Info.plist */,
 			);
 			path = HotelApp;
+			sourceTree = "<group>";
+		};
+		3EDF73B824EB147A00C934BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EDF73BD24EB14BA00C934BB /* Custom */,
+				3EDF73BC24EB14AE00C934BB /* Cell */,
+				3EDF73BB24EB14A400C934BB /* VC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EDF73B924EB148100C934BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EDF73BA24EB148700C934BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3EDF73BB24EB14A400C934BB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3EDF73BE24EB154500C934BB /* TabBarController.swift */,
+				3EDF73A824EB0F3100C934BB /* ViewController.swift */,
+				3EDF73C024EB165E00C934BB /* SavedViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3EDF73BC24EB14AE00C934BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3EDF73BD24EB14BA00C934BB /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EDF73A924EB0F3100C934BB /* ViewController.swift in Sources */,
+				3EDF73BF24EB154500C934BB /* TabBarController.swift in Sources */,
 				3EDF73A524EB0F3100C934BB /* AppDelegate.swift in Sources */,
+				3EDF73C124EB165E00C934BB /* SavedViewController.swift in Sources */,
 				3EDF73A724EB0F3100C934BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HotelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tisobyn.HotelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HotelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tisobyn.HotelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
